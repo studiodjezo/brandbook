@@ -4502,7 +4502,10 @@
         .demo-bg {
             position: absolute;
             inset: 0;
-            background: url('assets/Imagery/skater-grande.jpg') center/cover no-repeat;
+            background:
+                url('assets/Imagery/skater-grande.jpg') center/cover no-repeat,
+                linear-gradient(160deg, #2a1a10 0%, #111 45%, #050505 100%);
+            background-blend-mode: normal, normal;
             opacity: 0.8;
         }
 
@@ -4884,6 +4887,20 @@
 
             }
 
+            .bg-preview {
+
+                padding: 20px 16px;
+
+                overflow: hidden;
+
+            }
+
+            .bg-preview > div {
+
+                width: 88%;
+
+            }
+
         }
 
         /* ========================================
@@ -5173,8 +5190,8 @@
 
                 <a href="#apps"><span class="num">07</span>Applications</a>
                 <a href="#iconography"><span class="num">08</span>Iconographie</a>
-                <a href="#digital"><span class="num">09</span>Présence digitale</a>
-                <a href="#toolkit"><span class="num">10</span>WIP Toolkit</a>
+                <a href="#toolkit"><span class="num">09</span>WIP Toolkit</a>
+                <a href="#digital"><span class="num">10</span>Présence digitale</a>
             </nav>
 
 
@@ -7443,78 +7460,9 @@
             </section>
 
             <!-- ================== DIGITAL ================== -->
-            <section class="section" id="digital">
-                <div class="section-head">
-                    <span class="section-num">09 /</span>
-                    <span class="section-kicker">URLs &middot; Contacts &middot; Réseaux</span>
-                </div>
-
-                <h2>Où nous<br>trouver.</h2>
-
-                <p class="lead">Un point de contact principal, un site, un compte Instagram. On préfère être bien au
-
-                    même endroit qu'à moitié partout.</p>
-
-
-
-                <div class="digital-grid">
-
-                    <a class="digital-card" href="https://studiodjezo.com" target="_blank" rel="noopener">
-
-                        <div class="digital-label">SITE OFFICIEL</div>
-
-                        <div class="digital-value">studiodjezo<br>.com</div>
-
-                        <div class="digital-note">Portfolio, services, contact. Le point d'entrée principal.</div>
-
-                    </a>
-
-
-
-                    <a class="digital-card" href="mailto:contact@studiodjezo.com">
-
-                        <div class="digital-label">EMAIL PRO</div>
-
-                        <div class="digital-value">contact@<br>studiodjezo<br>.com</div>
-
-                        <div class="digital-note">Pour les devis, projets, collaborations, propositions.</div>
-
-                    </a>
-
-
-
-                    <a class="digital-card" href="https://instagram.com/studiodjezo" target="_blank" rel="noopener">
-
-                        <div class="digital-label">INSTAGRAM</div>
-
-                        <div class="digital-value">@studiodjezo</div>
-
-                        <div class="digital-note">Projets, inspirations, coulisses. Le terrain de jeu du studio.</div>
-
-                    </a>
-
-                </div>
-
-
-
-                <div class="type-notice">
-
-                    <strong>&#128205; Ancrage local</strong> &mdash; Studio Djezo est basé à <strong>Toulon</strong>, dans le Var. On
-
-                    rayonne sur toute la région PACA et on se déplace volontiers en région pour les projets qui le
-
-                    méritent. La proximité n'est pas un slogan, c'est une méthode.
-
-                </div>
-
-            </section>
-
-
-
-            <!-- ================== WIP TOOLKIT ================== -->
             <section class="section toolkit-section" id="toolkit">
                 <div class="section-head">
-                    <span class="section-num">10 /</span>
+                    <span class="section-num">09 /</span>
                     <span class="section-kicker">Technical Assets &middot; UI Elements &middot; WIP Set</span>
                 </div>
 
@@ -7721,6 +7669,75 @@
                 <div class="type-notice">
                     <strong>&#128161; Conseil d'utilisation</strong> &mdash; Ces éléments sont conçus pour être superposés, utilisés en tant que "watermarks" ou indicateurs d'état. Ils apportent une couche de réalisme technique (HUD aesthetic) à vos compositions.
                 </div>
+            </section>
+
+
+
+            <!-- ================== WIP TOOLKIT ================== -->
+            <section class="section" id="digital">
+                <div class="section-head">
+                    <span class="section-num">10 /</span>
+                    <span class="section-kicker">URLs &middot; Contacts &middot; Réseaux</span>
+                </div>
+
+                <h2>Où nous<br>trouver.</h2>
+
+                <p class="lead">Un point de contact principal, un site, un compte Instagram. On préfère être bien au
+
+                    même endroit qu'à moitié partout.</p>
+
+
+
+                <div class="digital-grid">
+
+                    <a class="digital-card" href="https://studiodjezo.com" target="_blank" rel="noopener">
+
+                        <div class="digital-label">SITE OFFICIEL</div>
+
+                        <div class="digital-value">studiodjezo<br>.com</div>
+
+                        <div class="digital-note">Portfolio, services, contact. Le point d'entrée principal.</div>
+
+                    </a>
+
+
+
+                    <a class="digital-card" href="mailto:contact@studiodjezo.com">
+
+                        <div class="digital-label">EMAIL PRO</div>
+
+                        <div class="digital-value">contact@<br>studiodjezo<br>.com</div>
+
+                        <div class="digital-note">Pour les devis, projets, collaborations, propositions.</div>
+
+                    </a>
+
+
+
+                    <a class="digital-card" href="https://instagram.com/studiodjezo" target="_blank" rel="noopener">
+
+                        <div class="digital-label">INSTAGRAM</div>
+
+                        <div class="digital-value">@studiodjezo</div>
+
+                        <div class="digital-note">Projets, inspirations, coulisses. Le terrain de jeu du studio.</div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="type-notice">
+
+                    <strong>&#128205; Ancrage local</strong> &mdash; Studio Djezo est basé à <strong>Toulon</strong>, dans le Var. On
+
+                    rayonne sur toute la région PACA et on se déplace volontiers en région pour les projets qui le
+
+                    méritent. La proximité n'est pas un slogan, c'est une méthode.
+
+                </div>
+
             </section>
 
             <!-- ================== FOOTER ================== -->
